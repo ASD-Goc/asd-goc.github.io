@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASD GOC</title>
+  </head>
+  <body>
+    <div id="header">
+      <script>
+        // Fetch the footer content from the external file
+        fetch("common\\header\\Header.html")
+          .then((response) => response.text())
+          .then((html) => {
+            // Insert the footer content into the specified element
+            document.getElementById("header").innerHTML = html;
+          })
+          .catch((error) =>
+            console.error("Error fetching footer content:", error)
+          );
+      </script>
+    </div>
+
+    <div id="Main">
+      <script>
+        // Fetch the footer content from the external file
+        fetch("Pages\\Main\\Main.html")
+          .then((response) => response.text())
+          .then((html) => {
+            // Insert the footer content into the specified element
+            document.getElementById("Main").innerHTML = html;
+          })
+          .catch((error) =>
+            console.error("Error fetching footer content:", error)
+          );
+      </script>
+    </div>
+
+    <div id="footer">
+      <script>
+        // Fetch the footer content from the external file
+        fetch("common\\footer\\Footer.html")
+          .then((response) => response.text())
+          .then((html) => {
+            // Insert the footer content into the specified element
+            document.getElementById("footer").innerHTML = html;
+          })
+          .catch((error) =>
+            console.error("Error fetching footer content:", error)
+          );
+      </script>
+    </div>
+  </body>
+</html>
