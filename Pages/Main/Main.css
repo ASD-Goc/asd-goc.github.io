@@ -1,17 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
 #Main {
   font-family: Arial, sans-serif;
   background-color: #ffe4e1;
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  grid-template-columns: auto;
+  display: flex;
+  width: 100%;
 }
 .container {
+  position: absolute;
   text-align: center;
   width: 80%;
   max-width: 800px;
+  top: 90%;
 }
 .logo {
   max-width: 200px;

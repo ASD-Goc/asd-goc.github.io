@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function EnableCompanyDropDown() {
   const dropdownTrigger = document.getElementById("company-dropdown");
   const dropdown = dropdownTrigger.querySelector(".dropdown");
 
@@ -18,4 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
   dropdown.addEventListener("click", function (event) {
     event.stopPropagation();
   });
-});
+}

@@ -1,6 +1,7 @@
 #header {
   margin: 0;
   font-family: Arial, sans-serif;
+  position: relative;
 }
 .header {
   background-color: #fff;
@@ -33,12 +34,13 @@
   position: relative;
   padding: 5px 0;
   cursor: pointer;
+  padding-right: 20px;
 }
 .dropdown {
   display: none;
   position: absolute;
   background-color: #fff;
-  min-width: 120px;
+  min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
   top: 100%;
@@ -60,4 +62,8 @@
 }
 .active-dropdown {
   display: block;
+}
+
+#HeaderASDLogo {
+  height: 60px;
 }
